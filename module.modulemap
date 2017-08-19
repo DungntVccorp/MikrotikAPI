@@ -1,0 +1,6 @@
+module MikrotikAPI [system] {
+  header "mikrotik-api.h”
+  header "md5.h"
+  link "MikrotikAPI"
+  export *
+}
