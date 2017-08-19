@@ -26,14 +26,12 @@ bool Sentence::Print()
 
     return true;
 }
-
-void Sentence::GetMap(map<string, string> &sentenceMap)
-{
+void Sentence::GetMap(int index, std::map<std::string, std::string> &sentenceMap) {
     for (int i = 0; i < strWords.size(); ++i) {
         string tmpDataString = strWords[i];
         vector<string> dataStrings;
         Tokenize(tmpDataString, dataStrings, "=");
-
+        
         if (returnType == NONE && dataStrings.size() > 1) {
             sentenceMap.insert(make_pair(dataStrings[1], dataStrings[2]));
         }

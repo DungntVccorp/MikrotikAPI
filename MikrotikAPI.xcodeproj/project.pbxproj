@@ -16,18 +16,86 @@
             "en",
          );
          mainGroup = OBJ_5;
-         productRefGroup = OBJ_10;
+         productRefGroup = OBJ_17;
          projectDirPath = ".";
          targets = (
+            OBJ_19,
          );
       };
       OBJ_10 = {
+         isa = "PBXFileReference";
+         path = "MikrotikAPITypes.cpp";
+         sourceTree = "<group>";
+      };
+      OBJ_11 = {
          isa = "PBXGroup";
          children = (
+            OBJ_12,
+            OBJ_13,
+            OBJ_14,
+            OBJ_15,
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      OBJ_12 = {
+         isa = "PBXFileReference";
+         path = "md5.h";
+         sourceTree = "<group>";
+      };
+      OBJ_13 = {
+         isa = "PBXFileReference";
+         path = "MikrotikAPI.h";
+         sourceTree = "<group>";
+      };
+      OBJ_14 = {
+         isa = "PBXFileReference";
+         path = "MikrotikAPITypes.h";
+         sourceTree = "<group>";
+      };
+      OBJ_15 = {
+         isa = "PBXFileReference";
+         name = "module.modulemap";
+         path = "/Users/dung.nt/Desktop/MikrotikAPI/MikrotikAPI.xcodeproj/GeneratedModuleMap/MikrotikAPI/module.modulemap";
+         sourceTree = "<group>";
+      };
+      OBJ_16 = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_17 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_18,
          );
          name = "Products";
          path = "";
          sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_18 = {
+         isa = "PBXFileReference";
+         path = "MikrotikAPI.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_19 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_20;
+         buildPhases = (
+            OBJ_23,
+            OBJ_24,
+            OBJ_28,
+         );
+         dependencies = (
+         );
+         name = "MikrotikAPI";
+         productName = "MikrotikAPI";
+         productReference = OBJ_18;
+         productType = "com.apple.product-type.framework";
       };
       OBJ_2 = {
          isa = "XCConfigurationList";
@@ -37,6 +105,111 @@
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Debug";
+      };
+      OBJ_20 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_21,
+            OBJ_22,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_21 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/Sources/include",
+            );
+            INFOPLIST_FILE = "MikrotikAPI.xcodeproj/MikrotikAPI_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "MikrotikAPI";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "MikrotikAPI";
+         };
+         name = "Debug";
+      };
+      OBJ_22 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/Sources/include",
+            );
+            INFOPLIST_FILE = "MikrotikAPI.xcodeproj/MikrotikAPI_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "MikrotikAPI";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "MikrotikAPI";
+         };
+         name = "Release";
+      };
+      OBJ_23 = {
+         isa = "PBXShellScriptBuildPhase";
+         files = (
+         );
+         shellPath = "/bin/sh";
+         shellScript = "mkdir -p \"${PROJECT_TEMP_DIR}/SymlinkLibs\"
+ln -sf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${PROJECT_TEMP_DIR}/SymlinkLibs/lib${EXECUTABLE_NAME}.dylib\"
+";
+      };
+      OBJ_24 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_25,
+            OBJ_26,
+            OBJ_27,
+         );
+      };
+      OBJ_25 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_8;
+      };
+      OBJ_26 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_9;
+      };
+      OBJ_27 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_10;
+      };
+      OBJ_28 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
       };
       OBJ_3 = {
          isa = "XCBuildConfiguration";
@@ -107,8 +280,8 @@
          children = (
             OBJ_6,
             OBJ_7,
-            OBJ_9,
-            OBJ_10,
+            OBJ_16,
+            OBJ_17,
          );
          path = "";
          sourceTree = "<group>";
@@ -123,26 +296,23 @@
          isa = "PBXGroup";
          children = (
             OBJ_8,
+            OBJ_9,
+            OBJ_10,
+            OBJ_11,
          );
          name = "Sources";
-         path = "";
+         path = "Sources";
          sourceTree = "SOURCE_ROOT";
       };
       OBJ_8 = {
-         isa = "PBXGroup";
-         children = (
-         );
-         name = "MikrotikAPI";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "md5.c";
+         sourceTree = "<group>";
       };
       OBJ_9 = {
-         isa = "PBXGroup";
-         children = (
-         );
-         name = "Tests";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "MikrotikAPI.cpp";
+         sourceTree = "<group>";
       };
    };
    rootObject = OBJ_1;

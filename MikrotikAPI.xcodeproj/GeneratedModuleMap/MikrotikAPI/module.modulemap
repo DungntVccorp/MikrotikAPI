@@ -1,0 +1,4 @@
+module MikrotikAPI {
+    umbrella header "/Users/dung.nt/Desktop/MikrotikAPI/Sources/include/MikrotikAPI.h"
+    export *
+}

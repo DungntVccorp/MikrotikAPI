@@ -60,6 +60,8 @@
 #include <vector>
 #include <string>
 #include "md5.h"
+#include <unistd.h>
+#include <stdlib.h>
 #include "MikrotikAPITypes.h"
 
 #define NOCONNECT 1
